@@ -1,0 +1,50 @@
+.containerSpace {
+    padding-top: 20px;
+}
+
+/* Navebar style */
+
+.myNavbar {
+    background-image: linear-gradient(to right, #6f42c1, #6e1af6,#7220f6, #6610f2, #622dc3, #6610f2, #6610f2);
+    font-size: 20px;
+}
+
+.myColor {
+    color: #7220f6
+}
+
+/* image style */
+.pad {
+    padding-top: 150px;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+}
+
+
+.box2 {
+    display: inline-block;
+    /* width: 30px; */
+    height: 100px;
+    margin: 1em;
+    margin-left: 10%;
+  }
+
+
+.box1 {
+float: right;
+width: 200px;
+height: 100px;
+margin-right: 30%;
+margin-top: 4%;
+}
+.afterBox {
+clear: left;
+}
+
+.myBtn a:hover{
+    color: #fff;
+    background-color: #ffea00;
+}
