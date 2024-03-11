@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import UserForm, LoginForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from .models import Product, Category
 
 
 def home(request):
@@ -10,8 +11,6 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
-def design(request):
-    return render(request, 'design.html')
 
 def userLogin(request):
     return render(request, 'login.html')
@@ -43,3 +42,29 @@ def userLogin(request):
     else:
         context = {'form':form}
         return render(request, 'login.html', context)
+    
+def userLogout(request):
+    logout(request)
+    messages.success(request, ('You have been logged out!'))
+    return redirect('home')
+
+def design(request):
+    if request.user.is_authenticated:
+        
+        category = request.GET.get('category')
+        if category == None:
+            product = Product.objects.all()
+        else:
+            product = Product.objects.filter(category__name=category)
+
+        categories = Category.objects.all()
+        context = {
+            'products':product,
+            'categories': categories
+        }
+        return render(request, 'category.html', context)
+
+    else:
+        pro = Product.objects.all().order_by()[:2]
+        return render(request, 'design.html', {'pro': pro})
+    
