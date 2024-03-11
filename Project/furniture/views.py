@@ -22,7 +22,7 @@ def userRegister(request):
         form = UserForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login')
+            return redirect('home')
     
     context = {'form':form}
     return render(request, 'register.html', context)
@@ -36,7 +36,7 @@ def userLogin(request):
         if user is not None:
             login(request, user)
             messages.success(request, ("You Have been LogedIn"))
-            return redirect('content')
+            return redirect('home')
         else:
             messages.success(request, ("Something Error"))
             return redirect('login')

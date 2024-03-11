@@ -27,6 +27,14 @@
     height: 500px;
 }
 
+.formLayout {
+	border-radius: 15px;
+	width: 500px!important;
+}
+.cent {
+	text-align: center!important;
+}
+
 
 .box2 {
     display: inline-block;
