@@ -2,6 +2,10 @@
     padding-top: 20px;
 }
 
+
+.about {
+    margin-top: 150px;
+}
 /* Navebar style */
 
 .myNavbar {
@@ -44,7 +48,9 @@ margin-top: 4%;
 clear: left;
 }
 
-
+.leftPad {
+    margin-left: 30px;
+}
 
 .glow-on-hover {
     width: 120px;

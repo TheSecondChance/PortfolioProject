@@ -9,14 +9,18 @@
             <div class="right box1"><img src="{% static 'images/backgroundImg.jpg' %}" class="rounded float-start img"></div>
             
         </div>
-
+        
         <div class="afterBox"></div>
-       <h1 class="pad">Welcome to <span class="myColor">Hojigari</span> Furniture.</h1>
-       <p>We offer an exquisite selection of premium furniture, meticulously crafted <br />
-        for superior quality, durability, and style.<br />
-         Elevate your living experience with our diverse range of furnishings <br />
-         designed to blend sophistication with comfort</p>
 
-        <button class="glow-on-hover myBtn" type="button">View Designs</button>
+       <h1 class="pad">Welcome to <span class="myColor">Hojigari</span> Furniture.</h1>
+
+       <div class="leftPad">
+        <p>We offer an exquisite selection of premium furniture, meticulously crafted <br />
+            for superior quality, durability, and style.<br />
+             Elevate your living experience with our diverse range of furnishings <br />
+             designed to blend sophistication with comfort</p>
+       </div>
+       
+        <a href="{% url 'about' %}"> <button class="glow-on-hover myBtn leftPad" type="button">View Designs</button> </a>
 
     {% endblock content %}
