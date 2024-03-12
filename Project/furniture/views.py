@@ -68,3 +68,5 @@ def design(request):
         pro = Product.objects.all().order_by()[:2]
         return render(request, 'design.html', {'pro': pro})
     
+def contact(request):
+    return render(request, 'contact.html')
