@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container myPad">
-    <h1>We Are Provide Amezing Quality!</h1>
+{% load static %}
+<div class="container">
+    
+<div>
+            <div class="right box1"><img src="{% static 'images/ba3.jpg' %}" class="rounded float-start img"></div>
+        </div>
+        
+            <div class="afterBox"></div>
+                <h1 class="pad">We Are Provide Amezing <span class="myColor">Quality!</span> Furniture.</h1>
+
+            <div class="leftPad">
+                
+                <p>With 27 years of collective experience in the furniture industry,<br />
+                our organization brings a wealth of expertise in crafting, designing, and<br />
+                ydelivering high-quality furniture solutions. Our extensive portfolio<br />
+                showcases a commitment to precision,<br />innovation, and customer satisfaction throughout our journey.</p>
+            </div>
+
+
 </div>
+<h1 class="myMarB"></h1>
 {% endblock content %}

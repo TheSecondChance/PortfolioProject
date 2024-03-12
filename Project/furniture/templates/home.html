@@ -2,9 +2,9 @@
 {% load static %}
     {% block content %}
         <div class="container">
-        <div>
-            <div class="right box1"><img src="{% static 'images/backgroundImg.jpg' %}" class="rounded float-start img"></div>
-        </div>
+            <div>
+                <div class="right box1"><img src="{% static 'images/backgroundImg.jpg' %}" class="rounded float-start img"></div>
+            </div>
         
             <div class="afterBox"></div>
 
@@ -16,9 +16,20 @@
                     Elevate your living experience with our diverse range of furnishings <br />
                     designed to blend sophistication with comfort</p>
             </div>
-            
-                <a href="{% url 'design' %}"> <button class="glow-on-hover myBtn leftPad" type="button">View Designs</button> </a>
+            <div class="afterBox"></div>
 
+                <a href="{% url 'design' %}"> <button class="glow-on-hover myBtn leftPad" type="button">View Designs</button> </a>
+        </div>
+        <h1 class="cente myMarg"><span class="myCol">Experience</span></h1>
+        <div class="myPad right box3"><img src="{% static 'images/ba.jpg' %}" class="rounded float-start img1"></div>
+        <div class="box4">
+                <p>With 27 years of collective experience in the furniture industry, our organization brings a wealth of expertise in crafting, designing, and delivering high-quality furniture solutions. Our extensive portfolio showcases a commitment to precision, innovation, and customer satisfaction throughout our journey.</p>
         </div>
 
+        
+
+
+
+
+        
     {% endblock content %}

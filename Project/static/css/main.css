@@ -1,8 +1,16 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+}
 .containerSpace {
     padding-top: 20px;
 }
 
-
+.myMarB {
+    margin-bottom: 300px;
+}
+.cente {
+    text-align: center;
+}
 .about {
     margin-top: 150px;
 }
@@ -27,6 +35,11 @@
     height: 500px;
 }
 
+.img1 {
+    width: 600px;
+    height: 400px;
+}
+
 .formLayout {
 	border-radius: 15px;
 	width: 500px!important;
@@ -44,7 +57,20 @@
     margin-left: 10%;
   }
 
-
+.box3 {
+display: inline-block;
+width: 300px;
+height: 500px;
+margin: 1em;
+margin-left: 10%;
+}
+.box4 {
+    float: right;
+    width: 400px;
+    height: 200px;
+    margin-right: 20%;
+    margin-top: 10%;
+    }
 .box1 {
 float: right;
 width: 200px;
@@ -120,6 +146,9 @@ clear: left;
     100% { background-position: 0 0; }
 }
 
+.myMarg {
+    margin-top: 200px;
+}
 
 .thumbnail{
 	width: 100%;
@@ -146,4 +175,18 @@ clear: left;
 
 .myPad {
     padding-top: 50px;
+}
+
+.footer {
+	background-image: linear-gradient(to right, #000000, #2b1056,#7220f6, #3e2663, #503d72, #6610f2, #302541)!important;
+	color: #fff;
+	padding: 10px;
+	padding-top: 20px;
+	margin-top: 50px;
+	padding-bottom: 100px;
+	text-align: right;
+}
+
+.myCol {
+    color:#0b057b66;
 }

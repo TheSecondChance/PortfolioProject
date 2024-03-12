@@ -19,10 +19,9 @@
             
             {% endfor %}
         </div>
-        
-
+</div>
     {% else %}
-
+<div class="myPad">
         <div class="row">
             {% for item in pro %}
             <div class="col-lg-4">
@@ -39,7 +38,7 @@
             {% endfor %}
         </div>
         <div class="viewMore col-lg-4">
-            <a href="{% url 'userRegister' %}" class="btn" type="betton">View More</a>
+            <a href="{% url 'userRegister' %}"  class="btn btn-outline-success">View More</a>
         </div>
 
     {% endif %}
