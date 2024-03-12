@@ -32,15 +32,17 @@
                     <button class="btn btn-outline-secondary add-btn">Add to Cart</button>
                     <a href="#" class="btn btn-outline-success">View</a>
                     <h4 style="display: inline-block; float: right">{{ item.price }}</h4>
-                    <h6>{{ item.describtion }}</h6>
+                    <h6 class="small">{{ item.describtion }}</h6>
                 </div>
             </div>
             {% endfor %}
         </div>
         <div class="viewMore col-lg-4 containerSpace">
-            <a href="{% url 'userRegister' %}"  class="btn btn-outline-success ">View More</a>
+            <a href="{% url 'userRegister' %}"> <button class="glow-on-hover myBtn" type="button">View More</button> </a>
         </div>
 
     {% endif %}
+</div>
+
 </div>
 {% endblock content %} 

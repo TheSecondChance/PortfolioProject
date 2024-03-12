@@ -22,8 +22,9 @@ body {
 }
 
 .myColor {
-    color: #7220f6;
+    color: #7220f6!important;
 }
+
 
 /* image style */
 .pad {
@@ -185,9 +186,12 @@ clear: left;
 	margin-top: 50px;
 	padding-bottom: 100px;
 	text-align: right;
-    position:sticky;
 }
 
 .myCol {
     color:#0b057b66;
+}
+
+.small {
+    padding-top: 15px;
 }

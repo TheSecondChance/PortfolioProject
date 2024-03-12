@@ -65,7 +65,7 @@ def design(request):
         return render(request, 'category.html', context)
 
     else:
-        pro = Product.objects.all().order_by()[:2]
+        pro = Product.objects.all().order_by()[:3]
         return render(request, 'design.html', {'pro': pro})
     
 def contact(request):
